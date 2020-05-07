@@ -31,7 +31,7 @@
     const nextSong = album.songs[nextSongIndex];
     player.playPause(nextSong);
 
-    const duration = player.getDuration();
+    const duration = player.currentlyPlaying.duration;
     $('#time-control .total-time').text( player.prettyTime(duration) );
   });
 
